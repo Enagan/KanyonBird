@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 
 /// <summary>
-/// The UIController is responsible for managing the in-game UI, both the progress tracker, 
+/// The UIController is responsible for managing the in-game UI, both the progress tracker,
 /// and the three menus that can appear in different circumstances (Pause, Game Over & Victory)
 /// It is also in charge of pausing and resuming the game, by manipulating the timescale.
 /// </summary>
@@ -23,7 +23,7 @@ public class UIController : MonoBehaviour {
   bool _gameEnded = false;
 
   void Start () {
-    // For performance sake, fetch references on start, rather than when needed (FindChild is not the fastest method)
+    // For performance sake, fetch references on start, rather than every time they are needed (FindChild is not the fastest method)
     _progressText = gameObject.transform.FindChild("DistanceText").gameObject.GetComponent<Text>();
     _pauseMenu = gameObject.transform.FindChild("PauseMenu").gameObject;
     _gameOverMenu = gameObject.transform.FindChild("GameoverMenu").gameObject;
@@ -84,7 +84,6 @@ public class UIController : MonoBehaviour {
     // Traversed distance is divided by 10 to have a more presentable number that can be believeable as meters given the bird size and speed
     _gameOverMenu.transform.FindChild("HighscoreText").GetComponent<Text>().text = "You got as far as " + (int)(_bird.getTraversedDistance() / 10.0f) + "m";
   }
-
 
   // --- Public Methods to be called by the menu buttons in the paused, game over and victory menus
 

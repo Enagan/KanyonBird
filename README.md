@@ -3,6 +3,7 @@
 Kanyon Bird features the exiting voyage of a bird as he attempts to reach the end of a canyon alive.
 The game was made in 48 hours for the Global Game Jam event (http://globalgamejam.org/), with the goal of being QWOP (for the awkward controls) mashed together with Flappy Bird (for the bird.. and the flapping), but in 3D!
 I had the pleasure to work alongside Madalena (Concept and UI Art) and André (3D Art) in this jam.
+Each source file is commented in order to properly explain how the game works as a whole.
 
 ## How to Play:
 

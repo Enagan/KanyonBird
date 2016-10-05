@@ -26,7 +26,7 @@ public class MainMenuController : MonoBehaviour {
   }
 
   /// <summary>
-  /// Toggles the presentation of the credits menu, should be called from the main menu
+  /// Toggles the presentation of the credits menu, should be called from the main menu button
   /// </summary>
   public void toggleCredits()
   {
@@ -39,7 +39,7 @@ public class MainMenuController : MonoBehaviour {
   }
 
   /// <summary>
-  /// Toggles the presentation of the controls menu, should be called from the main menu
+  /// Toggles the presentation of the controls menu, should be called from the main menu button
   /// </summary>
   public void toggleControls()
   {
